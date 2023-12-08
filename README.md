@@ -1,6 +1,7 @@
 # 🎄AdventJS solutions 2023 edition
 
-
+Aca encontraran los ejercicios resultos en js o ts por mi. Para participar del desafio acceder a 
+[🎄AdventJS](https://adventjs.dev/es)
 
 | IMG                                                                                              | ##  | Nombre del reto                                                           |  Solución                                                                        | 
 | ------------------------------------------------------------------------------------------------ | :-: | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | 
