@@ -1,4 +1,4 @@
-function manufacture(gifts, materials) : string[] { 
+function manufacture(gifts:string[], materials:string) : string[] { 
     const result: string[] = []; 
     for (const gift of gifts) { 
       let canBeManufactured = true; 
