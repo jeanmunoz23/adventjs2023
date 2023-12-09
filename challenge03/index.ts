@@ -1,4 +1,4 @@
-function findNaughtyStep(original: string, modified: string) {
+function findNaughtyStep(original: string, modified: string): string {
     const [larger, shorter] =
       original.length >= modified.length
         ? [original, modified]
