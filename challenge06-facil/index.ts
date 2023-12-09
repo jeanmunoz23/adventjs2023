@@ -1,4 +1,4 @@
-function maxDistance(movements): number{
+function maxDistance(movements: string[]): number{
     // Code here
     let derecha = 0
     let izquierda = 0
