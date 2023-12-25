@@ -1,18 +1,15 @@
 function transformTree(tree) {
-    const index = arguments[1] ?? 0
-    const value = tree[index]
-    let base
-    let result
-
-    if (value !== null && value !== undefined) {
-        base = index * 2
-        result = {
-        value: value,
-        left: transformTree(tree, base + 1),
-        right: transformTree(tree, base + 2),
-        }
+    function recursiveToTree(arr, i = 0) {
+        if (i >= arr.length || arr[i] === null) return null;
+        return {
+        value: arr[i],
+        left: recursiveToTree(arr, 2 * i + 1),
+        right: recursiveToTree(arr, 2 * i + 2)
+        };
     }
 
-    return result ?? null
+    const result = recursiveToTree(tree);
+
+    return result;
 }
 console.log(transformTree([3, 1, 0, 8, 12, null, 1]))
